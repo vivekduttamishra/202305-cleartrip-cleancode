@@ -1,0 +1,64 @@
+package in.conceptarchitect.collections.specs;
+
+import static org.junit.Assert.fail;
+
+import org.junit.Ignore;
+import org.junit.Test;
+
+import in.conceptarchitect.collections.FixedStack;
+
+public class FixedStackSpecs {
+
+	int size=3;
+	
+	@Test
+	//@Ignore
+	public void stackShouldBeCreatedWithFixedSize() {
+		//fail("Not Yet Implemented");
+		FixedStack stack=new FixedStack(size);
+	}
+
+	@Test
+	@Ignore
+	public void stackShouldBeInitallyEmpty() {
+		fail("Not Yet Implemented");
+	}
+	
+	@Test
+	@Ignore
+	public void pushingAnItemToStackMakesItNonEmpty() {
+		fail("Not Yet Implemented");
+	}
+	
+	@Test
+	@Ignore
+	public void pushingAnItemsLessThanSizeMakesStackNonFull() {
+		fail("Not Yet Implemented");
+	}
+	
+	@Test
+	@Ignore
+	public void pushingItemsEqualsStackSizeMakesItFull() {
+		fail("Not Yet Implemented");
+	}
+	
+	@Test
+	@Ignore
+	public void pushingToAFullStackCausesStackOverflowException() {
+		fail("Not Yet Implemented");
+	}
+	
+	@Test
+	@Ignore
+	public void poppingFromAFullStackMakesItNonFull() {
+		fail("Not Yet Implemented");
+	}
+	
+	@Test
+	@Ignore
+	public void poppingFromAnEmptyStackThrowsStackUnderflowException() {
+		fail("Not Yet Implemented");
+	}
+	
+	
+}

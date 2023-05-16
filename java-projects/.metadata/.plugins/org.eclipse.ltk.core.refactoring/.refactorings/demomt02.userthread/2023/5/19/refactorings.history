@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename package &apos;demomt01.singlethread&apos; to &apos;demomt01.userthread&apos;&#x0D;&#x0A;- Original project: &apos;demomt02.userthread&apos;&#x0D;&#x0A;- Original element: &apos;demomt02.userthread/src/demomt01.singlethread&apos;&#x0D;&#x0A;- Renamed element: &apos;demomt02.userthread/src/demomt01.userthread&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename package &apos;demomt01.singlethread&apos;" flags="589830" hierarchical="false" id="org.eclipse.jdt.ui.rename.package" input="/src&lt;demomt01.singlethread" name="demomt01.userthread" qualified="false" references="true" stamp="1683962852716" textual="false" version="1.0"/>
+</session>

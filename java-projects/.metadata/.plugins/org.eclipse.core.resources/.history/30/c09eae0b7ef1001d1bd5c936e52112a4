@@ -1,0 +1,77 @@
+package demomt08.returningvalue;
+
+import in.conceptarchitect.utils.ThreadUtils;
+
+public class Program {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		int n=7, r=2;
+		
+		
+		
+		
+		//testPermutationSync(n, r);
+		
+		testPermutationAsync(n, r);
+		
+		
+		
+		
+	}
+
+
+	private static void testPermutationAsync(int n, int r) {
+		long start;
+		long result;
+		long end;
+		start=System.currentTimeMillis();
+		System.out.println("calculating async");
+		result=permutationAsync(n,r);
+		System.out.println("result "+result);
+		end=System.currentTimeMillis();
+		System.out.println("Total time taken is "+(end-start));
+	}
+
+
+	private static void testPermutationSync(int n, int r) {
+		var start=System.currentTimeMillis();
+		System.out.println("calculating without multiple-thread");
+		var result=permutation(n,r);
+		System.out.println("result "+result);
+		var end=System.currentTimeMillis();
+		System.out.println("Total time taken is "+(end-start));
+	}
+	
+	
+	static int permutationAsync(int n,int r) {
+		
+		var fn = new Factorial(n,true);
+		
+		var fn_r=new Factorial(n-r,true);
+		
+		ThreadUtils.waitFor(fn.getThread(), fn_r.getThread());
+		
+		
+		return fn.getResult()/fn_r.getResult();
+		
+	}
+	
+	static int permutation(int n,int r) {
+		
+		var fn = new Factorial(n,false);
+		
+		var fn_r=new Factorial(n-r,false);
+		
+		fn.run();
+		
+		fn_r.run();
+		
+		return fn.getResult()/fn_r.getResult();
+		
+	}
+
+	
+
+
+}

@@ -1,0 +1,25 @@
+package demomt05.threadsubclass;
+
+public class Program {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		var thread1=new CountDownThread(150);		
+		var thread2=new CountDownThread(300);
+		var thread3=new CountDownThread(100);
+		
+		
+		
+		
+		thread1.start(); //runs task on a separate thread
+		thread2.start(); //runs task on a separate thread
+		thread3.start(); //runs task on a separate thread
+
+		
+		System.out.printf("[%d] Main Ends", Thread.currentThread().getId());
+		
+		
+	}
+
+}

@@ -1,0 +1,42 @@
+package demomt08.returningvalue;
+
+import in.conceptarchitect.utils.ThreadUtils;
+
+public class Program {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		int n=7, r=2;
+		
+		var start=System.currentTimeMillis();
+		System.out.println("calculating without multiple-thread");
+		var result=permutation(n,r);
+		System.out.println("result "+result);
+		var end=System.currentTimeMillis();
+		System.out.println("Total time taken is "+(end-start));
+		
+		
+		
+		
+		
+		
+	}
+	
+	static int permutation(int n,int r) {
+		
+		var fn = new Factorial(n);
+		
+		var fn_r=new Factorial(n-r);
+		
+		fn.run();
+		
+		fn_r.run();
+		
+		return fn.getResult()/fn_r.getResult();
+		
+	}
+
+	
+
+
+}

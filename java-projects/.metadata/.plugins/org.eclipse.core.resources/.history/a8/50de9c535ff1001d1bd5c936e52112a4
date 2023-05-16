@@ -1,0 +1,14 @@
+package demomt01.singlethread;
+
+public class Program {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		Thread currentThread = Thread.currentThread();
+		
+		System.out.println(currentThread);
+		
+	}
+
+}

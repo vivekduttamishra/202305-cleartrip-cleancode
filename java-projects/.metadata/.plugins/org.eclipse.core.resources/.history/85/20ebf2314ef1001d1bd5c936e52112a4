@@ -1,0 +1,9 @@
+package in.conceptarchitect.collections;
+
+public class FixedStack {
+
+	public FixedStack(int size) {
+		// TODO Auto-generated constructor stub
+	}
+
+}

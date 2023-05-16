@@ -1,0 +1,26 @@
+package in.conceptarchitect.collections;
+
+public class FixedStack {
+	
+	boolean empty=true;
+
+	public FixedStack(int size) {
+		// TODO Auto-generated constructor stub
+	}
+
+	public boolean isEmpty() {
+		// TODO Auto-generated method stub
+		return empty;
+	}
+
+	public void push(String string) {
+		// TODO Auto-generated method stub
+		empty=false;
+	}
+
+	public boolean isFull() {
+		// TODO Auto-generated method stub
+		return false;
+	}
+
+}

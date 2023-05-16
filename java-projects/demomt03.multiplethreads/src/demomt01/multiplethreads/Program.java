@@ -1,0 +1,24 @@
+package demomt01.multiplethreads;
+
+public class Program {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		var task1=new CountDownTask();		
+		var task2=new CountDownTask();
+		
+		
+		var thread1=new Thread(task1);		
+		var thread2=new Thread(task2);
+		
+		thread1.start(); //runs task on a separate thread
+		thread2.start(); //runs task on a separate thread
+
+		
+		System.out.printf("[%d] Main Ends", Thread.currentThread().getId());
+		
+		
+	}
+
+}

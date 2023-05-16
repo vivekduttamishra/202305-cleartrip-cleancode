@@ -1,0 +1,32 @@
+package demo01.rectangle;
+
+class Rectangle{
+
+	double width, height;
+	
+	public Rectangle(double width, double height){
+		this.width=width;
+		this.height=height;
+	}
+	
+	public double area(){
+		return width*height;
+	}
+	
+	public double perimeter(){
+		return 2*(width+height);
+	}
+	
+	public String draw(){
+		return "[" + width+"," + height+ "] ";
+	}
+	
+	public Oriented getOrientation(){
+		if(width>height)
+			return Orientation.Horizontal;
+		else
+			return Oreintation.Vertical;
+	}
+
+}
+

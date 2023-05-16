@@ -1,0 +1,26 @@
+package demo01.rectangle;
+
+public class Program {
+
+	public static void main(String[]args) {
+		Rectangle [] rectangles= {
+				new Rectangle(4,8),
+				new Square(8),
+				new Rectangle(9,2)
+		};
+		
+		for(var rectangle :rectangles) {
+			System.out.println(rectangle);
+			System.out.println("Area:"+ rectangle.area());
+			System.out.println("Perimeter:"+rectangle.perimeter());
+			rectangle.draw();
+			//System.out.println("Orientation:"+rectangle.getOrientation());
+			System.out.println();
+		}
+		
+		var s=new Square(8);
+		s.setHeight(12);
+		s.draw();
+	}
+	
+}

@@ -1,0 +1,48 @@
+package demomt09.sharedresource;
+
+import in.conceptarchitect.utils.ThreadUtils;
+
+public class Worker {
+	
+	Basket basket;
+	long itemsToAdd;
+	Thread thread;
+	
+	public Basket getBasket() {
+		return basket;
+	}
+	
+	public long getItemsToAdd() {
+		return itemsToAdd;
+	}
+	
+	public Worker(Basket basket, long itemsToAdd) {
+		super();
+		this.basket = basket;
+		this.itemsToAdd = itemsToAdd;
+		
+		thread=new Thread(this::work);
+		
+	}
+	
+	public void start() {
+		thread.start();
+	}
+	
+	public void waitFor() {
+		ThreadUtils.waitFor(thread);
+	}
+	
+	public Thread getThread() {
+		return thread;
+	}
+
+	public void work() {
+		
+		for(int i=0;i<itemsToAdd;i++)
+			basket.add();
+		
+	}
+	
+
+}

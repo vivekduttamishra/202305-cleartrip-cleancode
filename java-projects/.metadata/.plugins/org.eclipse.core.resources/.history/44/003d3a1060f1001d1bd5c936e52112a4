@@ -1,0 +1,15 @@
+package demomt01.userthread;
+
+public class Program {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		var task=new ThreadInfoPrinter();
+		
+		task.run();
+		
+		
+	}
+
+}

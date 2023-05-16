@@ -1,0 +1,19 @@
+package demomt01.multiplethreads;
+
+public class Program {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		var task=new CountDownThread();
+		
+		var thread=new Thread(task);
+		
+		thread.start(); //runs task on a separate thread
+		
+		task.run(); //runs task on the main thread
+		
+		
+	}
+
+}

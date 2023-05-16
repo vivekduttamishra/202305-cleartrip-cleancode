@@ -1,0 +1,48 @@
+package in.conceptarchitect.collections.specs;
+
+import org.junit.Test;
+
+public class FixedStackSpecs {
+
+	@Test
+	public void stackShouldBeCreatedWithFixedSize() {
+		
+	}
+
+	@Test
+	public void stackShouldBeInitallyEmpty() {
+		
+	}
+	
+	@Test
+	public void pushingAnItemToStackMakesItNonEmpty() {
+		
+	}
+	
+	@Test
+	public void pushingAnItemsLessThanSizeMakesStackNonFull() {
+		
+	}
+	
+	@Test
+	public void pushingItemsEqualsStackSizeMakesItFull() {
+		
+	}
+	
+	@Test
+	public void pushingToAFullStackCausesStackOverflowException() {
+		
+	}
+	
+	@Test
+	public void poppingFromAFullStackMakesItNonFull() {
+		
+	}
+	
+	@Test
+	public void poppingFromAnEmptyStackThrowsStackUnderflowException() {
+		
+	}
+	
+	
+}

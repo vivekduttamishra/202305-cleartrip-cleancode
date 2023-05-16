@@ -1,0 +1,4 @@
+1683975053742	Rename package 'demomt07.daemonthread'
+1683975174260	Rename field 'fn'
+1683975649159	Extract method 'testPermutationSync'
+1683975668602	Extract method 'testPermutationAsync'

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+    <fullyQualifiedTypeName name="demo01.rectangle.Orientation"/>
+    <fullyQualifiedTypeName name="demo01.rectangle.ProperRectangle"/>
+    <fullyQualifiedTypeName name="java.lang.Override"/>
+    <fullyQualifiedTypeName name="java.lang.RuntimeException"/>
+    <fullyQualifiedTypeName name="org.junit.Ignore"/>
+    <fullyQualifiedTypeName name="org.junit.Before"/>
+    <fullyQualifiedTypeName name="java.lang.Integer"/>
+    <fullyQualifiedTypeName name="in.conceptarchitect.collections.StackOverflowException"/>
+    <fullyQualifiedTypeName name="in.conceptarchitect.collections.StackUnderflowException"/>
+    <fullyQualifiedTypeName name="demomt01.userthread.ThreadInfoPrinter"/>
+    <fullyQualifiedTypeName name="java.lang.Thread.State"/>
+    <fullyQualifiedTypeName name="java.lang.InterruptedException"/>
+    <fullyQualifiedTypeName name="in.conceptarchitect.utils.ThreadInterruptedException"/>
+    <fullyQualifiedTypeName name="in.conceptarchitect.utils.ThreadUtils"/>
+</qualifiedTypeNameHistroy>

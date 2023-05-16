@@ -1,0 +1,93 @@
+package in.conceptarchitect.collections.specs;
+
+import static org.junit.Assert.assertFalse;
+import static org.junit.Assert.assertNotNull;
+import static org.junit.Assert.assertTrue;
+import static org.junit.Assert.fail;
+
+import org.junit.Before;
+import org.junit.Ignore;
+import org.junit.Test;
+
+import in.conceptarchitect.collections.FixedStack;
+
+public class FixedStackSpecs {
+
+	//Arrange
+	int size=3;
+	FixedStack stack;
+	
+	@Before
+	public void arrange() {
+		stack=new FixedStack(size);
+	}
+	
+	@Test
+	//@Ignore
+	public void stackShouldBeCreatedWithFixedSize() {
+		//Arrange
+		
+		//Act
+		FixedStack stack=new FixedStack(size);
+		
+		//Assert
+		assertNotNull(stack);
+		
+		
+		
+	}
+
+	@Test
+	
+	public void stackShouldBeInitallyEmpty() {
+		
+		//ACT
+		
+		//Assert
+		assertTrue(stack.isEmpty());
+	}
+	
+	@Test
+	
+	public void pushingAnItemToStackMakesItNonEmpty() {
+		//Arrange
+		
+		//Act
+		stack.push("hello");
+		
+		//Assert
+		assertFalse(stack.isEmpty());
+	}
+	
+	@Test
+	@Ignore
+	public void pushingAnItemsLessThanSizeMakesStackNonFull() {
+		fail("Not Yet Implemented");
+	}
+	
+	@Test
+	@Ignore
+	public void pushingItemsEqualsStackSizeMakesItFull() {
+		fail("Not Yet Implemented");
+	}
+	
+	@Test
+	@Ignore
+	public void pushingToAFullStackCausesStackOverflowException() {
+		fail("Not Yet Implemented");
+	}
+	
+	@Test
+	@Ignore
+	public void poppingFromAFullStackMakesItNonFull() {
+		fail("Not Yet Implemented");
+	}
+	
+	@Test
+	@Ignore
+	public void poppingFromAnEmptyStackThrowsStackUnderflowException() {
+		fail("Not Yet Implemented");
+	}
+	
+	
+}

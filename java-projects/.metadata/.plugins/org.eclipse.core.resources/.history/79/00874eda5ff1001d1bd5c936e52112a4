@@ -1,0 +1,5 @@
+package demomt01.userthread;
+
+public class ThreadInfoPrinter {
+
+}

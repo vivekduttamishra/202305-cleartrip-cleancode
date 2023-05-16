@@ -1,0 +1,35 @@
+package demomt08.returningvalue;
+
+import in.conceptarchitect.utils.ThreadUtils;
+
+public class Factorial implements Runnable {
+	
+	int n;
+	int result=1;
+	
+	
+
+	public int getResult() {
+		return result;
+	}
+
+
+	public Factorial(int n) {
+		super();
+		this.n = n;
+	}
+
+
+	@Override
+	public void run() {
+		
+		result=1;
+		
+		while(n>0) {
+			result*=n--;
+			ThreadUtils.sleep(1000); //simulate long running task
+		}
+		
+	}
+
+}

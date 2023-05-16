@@ -1,0 +1,12 @@
+package demomt01.multiplethreads;
+
+public class CountDownThread implements Runnable{
+
+	@Override
+	public void run() {
+		
+		System.out.println("Thread is "+Thread.currentThread().getName());
+		
+	}
+
+}

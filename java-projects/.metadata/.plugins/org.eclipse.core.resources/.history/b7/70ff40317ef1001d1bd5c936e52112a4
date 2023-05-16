@@ -1,0 +1,45 @@
+package demomt08.returningvalue;
+
+import in.conceptarchitect.utils.ThreadUtils;
+
+public class Factorial implements Runnable {
+	
+	int n;
+	int result=1;
+	
+	Thread thread;
+	
+
+	public Thread getThread() {
+		return thread;
+	}
+
+
+	public int getResult() {
+		return result;
+	}
+
+
+	public Factorial(int n, boolean startThread) {
+		super();
+		this.n = n;
+		if(startThread) {
+			thread=new Thread(this);
+			thread.start();
+		}
+	}
+
+
+	@Override
+	public void run() {
+		
+		result=1;
+		
+		while(n>0) {
+			result*=n--;
+			ThreadUtils.sleep(1000); //simulate long running task
+		}
+		
+	}
+
+}

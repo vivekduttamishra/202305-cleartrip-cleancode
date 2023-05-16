@@ -1,0 +1,32 @@
+package demomt08.returningvalue;
+
+import in.conceptarchitect.utils.ThreadUtils;
+
+public class Program {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		
+		
+		
+		
+		
+	}
+	
+	static int permutation(int n,int r) {
+		
+		var fn = new Factorial(n);
+		
+		var fn_r=new Factorial(n-r);
+		
+		
+		return fn.getResult()/fn_r.getResult();
+		
+		
+	}
+
+	
+
+
+}

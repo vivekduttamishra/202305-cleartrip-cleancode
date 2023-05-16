@@ -1,0 +1,33 @@
+package demomt04.parameterizethread;
+
+public class CountDownTask implements Runnable{
+
+	int max;
+	
+	
+	public CountDownTask(int max) {
+		super();
+		this.max = max;
+	}
+
+
+
+	@Override
+	public void run() {
+		
+		
+		var threadId = Thread.currentThread().getId();
+		
+		System.out.printf("[%d] starts\n", threadId);
+		
+		while(max>=0) {
+			System.out.printf("[%d] counts %d\n", threadId,max);
+			max--;
+		}
+		
+		System.out.printf("[%d] ends\n", threadId);
+		
+		
+	}
+
+}
